@@ -31,7 +31,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603943570592</updated>
-      <workItem from="1603943571848" duration="1002000" />
+      <workItem from="1603943571848" duration="1088000" />
     </task>
     <servers />
   </component>
@@ -39,10 +39,14 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="208" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603944558434">
+    <state x="302" y="217" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603944632639">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="208" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1603944558434" />
+    <state x="302" y="217" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1603944632639" />
+    <state x="483" y="318" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1603944624429">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="483" y="318" key="#com.intellij.ide.util.TreeClassChooserDialog/-1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1603944624429" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1603944451867">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

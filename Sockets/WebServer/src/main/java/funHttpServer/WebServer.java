@@ -199,11 +199,10 @@ class WebServer {
 
           Map<String, String> query_pairs = new LinkedHashMap<String, String>();
           // extract path parameters
-          query_pairs = splitQuery(request.replace("multiply?", ""));
+
 
           // We already have the handling to process the rquests properly. now what we need is to
           // determine if they are good.
-
           try {
             query_pairs = splitQuery(request.replace("multiply?", ""));
 
