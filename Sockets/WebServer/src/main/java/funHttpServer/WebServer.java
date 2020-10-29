@@ -205,6 +205,8 @@ class WebServer {
           // determine if they are good.
 
           try {
+            query_pairs = splitQuery(request.replace("multiply?", ""));
+
             // extract required fields from parameters
             Integer num1 = Integer.parseInt(query_pairs.get("num1"));
             Integer num2 = Integer.parseInt(query_pairs.get("num2"));
