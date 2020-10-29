@@ -201,21 +201,29 @@ class WebServer {
           // extract path parameters
           query_pairs = splitQuery(request.replace("multiply?", ""));
 
-          // extract required fields from parameters
-          Integer num1 = Integer.parseInt(query_pairs.get("num1"));
-          Integer num2 = Integer.parseInt(query_pairs.get("num2"));
+          // We already have the handling to process the rquests properly. now what we need is to
+          // determine if they are good.
 
-          // do math
-          Integer result = num1 * num2;
+          try {
+            // extract required fields from parameters
+            Integer num1 = Integer.parseInt(query_pairs.get("num1"));
+            Integer num2 = Integer.parseInt(query_pairs.get("num2"));
 
-          // Generate response
-          builder.append("HTTP/1.1 200 OK\n");
-          builder.append("Content-Type: text/html; charset=utf-8\n");
-          builder.append("\n");
-          builder.append("Result is: " + result);
+            // do math
+            Integer result = num1 * num2;
 
-          // TODO: Include error handling here with a correct error code and
-          // a response that makes sense
+            // Generate response
+            builder.append("HTTP/1.1 200 OK\n");
+            builder.append("Content-Type: text/html; charset=utf-8\n");
+            builder.append("\n");
+            builder.append("Result is: " + result);
+          } catch {
+            // Generate response
+            builder.append("HTTP/1.1 400 Bad Request\n");
+            builder.append("Content-Type: text/html; charset=utf-8\n");
+            builder.append("\n");
+            builder.append("Please pass in two integer values as the parameters num1 & num2");
+          }
 
         } else if (request.contains("github?")) {
           // pulls the query from the request and runs it with GitHub's REST API
